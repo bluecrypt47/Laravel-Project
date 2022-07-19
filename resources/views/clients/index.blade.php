@@ -9,8 +9,15 @@
 </head>
 <body>
     @include('clients.blocks.header')
+    <div style="margin-top: 20px">
+        <div class="container-fluid">
+            <div class="row">
+                @include('clients.blocks.menu')
 
-    @include('clients.contents.home')
+                @include('clients.contents.home')
+            </div>
+        </div>
+    </div>
 
     @include('clients.blocks.footer')
 

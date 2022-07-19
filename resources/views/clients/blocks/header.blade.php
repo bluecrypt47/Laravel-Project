@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-4">
                 <a href="{{ route('home') }}">
-                    <h1>HHT</h1>
+                    <h1>BlueC</h1>
                 </a>
             </div>
             <div class="col-8 d-flex justify-content-end align-items-center">
