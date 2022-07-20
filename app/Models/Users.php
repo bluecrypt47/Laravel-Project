@@ -11,9 +11,18 @@ class Users extends Model
 {
     use HasFactory;
 
+    protected $table = 'users';
+
     public function getListUser()
     {
         $listUsers = DB::select('SELECT * FROM users ORDER BY dateUpdate DESC');
+
+        return $listUsers;
+    }
+
+    public function addUser($data)
+    {
+        $listUsers = DB::insert('INSERT INTO users (fullname, email, password) values (?, ?, ?)', $data);
 
         return $listUsers;
     }

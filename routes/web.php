@@ -16,3 +16,15 @@ use App\Http\Controllers\clients\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/index', [HomeController::class, 'index'])->name('home');
+
+// add user
+Route::get('addUser', [HomeController::class, 'addUser'])->name('addUser');
+Route::post('addUser', [HomeController::class, 'postAddUser'])->name('postAddUser');
+
+// edit user
+Route::get('editUser/{id}', [HomeController::class, 'editUser'])->name('editUser');
+Route::post('editUser/{id}', [HomeController::class, 'postEditUser'])->name('postEditUser');
+
+// delete user
+Route::get('delUser/{id}', [HomeController::class, 'delUser'])->name('delUser');
+Route::post('delUser/{id}', [HomeController::class, 'postDelUser'])->name('postDelUser');
